@@ -1,0 +1,12 @@
+ALTER TABLE `transactions` DISABLE KEYS;
+LOAD DATA INFILE 'D:\\INFA_MAGISTER\\ZTBD\\Projekt\\import1.csv' 
+INTO TABLE 
+`transactions` 
+CHARACTER SET UTF8 
+FIELDS TERMINATED BY ','  
+ENCLOSED BY '"' 
+LINES TERMINATED BY '\n';
+ALTER TABLE `transactions` ENABLE KEYS;
+
+D:\\INFA_MAGISTER\\ZTBD\\Projekt\\import2_3.csv
+alter table transactions AUTO_INCREMENT=1
